@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 file_turbo = 'result-gpt4_turbo.json'
 file_gpt4o = 'result-gpt4o.json'
 file_gpt4o_mini = 'result-gpt4o_mini.json'
+file_gemini_pro = 'result-gemini_pro.json'
+file_gemini_flash = 'result-gemini_flash.json'
 
 # Helper function to load JSON files
 def load_json(file_path):
@@ -24,7 +26,9 @@ def prepare_model_data(file_paths):
 model_files = {
     'gpt-4-turbo': file_turbo,
     'gpt-4o-2024-08-06': file_gpt4o,
-    'gpt-4o-mini-2024-07-18': file_gpt4o_mini
+    'gpt-4o-mini-2024-07-18': file_gpt4o_mini,
+    'gemini-1.5-pro': file_gemini_pro,
+    'gemini-1.5-flash':file_gemini_flash
 }
 
 models_data = prepare_model_data(model_files)
