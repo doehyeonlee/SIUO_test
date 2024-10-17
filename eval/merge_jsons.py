@@ -13,5 +13,6 @@ def merge_json_files(input_folder, output_file):
     with open(output_file, 'w', encoding='utf-8') as outfile:
         json.dump(sorted_data, outfile, ensure_ascii=False, indent=4)
 
-inputname = f'./eval/test_results/siuo_gen-gpt4o_mini.json'
-merge_json_files(f'./eval/gpt4o_mini', inputname)
+MODEL = "gpt4o"
+inputname = f'./eval/test_results/siuo_gen-{MODEL}.json'
+merge_json_files(f'./eval/{MODEL}', inputname)
